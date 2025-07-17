@@ -1,0 +1,13 @@
+{
+  "name": "padroes-de-entrevista-front",
+  "version": "1.0.0",
+  "description": "Gerenciamento de dependências front-end para TailwindCSS",
+  "scripts": {
+    "build:tailwind": "tailwindcss -i ./public/input.css -o ./public/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.16"
+  }
+} 
