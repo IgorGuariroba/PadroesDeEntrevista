@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "Gerenciamento de dependências front-end para TailwindCSS",
   "scripts": {
-    "build:tailwind": "tailwindcss -i ./public/input.css -o ./public/tailwind.css --minify"
+    "build:tailwind": "tailwindcss -i ./public/input.css -o ./public/tailwind.css --minify",
+    "build-prism": "cp node_modules/prismjs/prism.js public/libs/prismjs/ && cp node_modules/prismjs/components/prism-clike.min.js public/libs/prismjs/components/ && cp node_modules/prismjs/components/prism-php.min.js public/libs/prismjs/components/ && cp node_modules/prismjs/themes/prism-tomorrow.css public/libs/prismjs/"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.38",
-    "autoprefixer": "^10.4.16"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "codemirror": "^5.65.16"
   }
-} 
+}
